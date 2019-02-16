@@ -1,0 +1,58 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.7)
+  - Reachability (3.2)
+  - XKFileDownloader (1.0.0):
+    - XKFileManager
+    - XKHttpNetworkHelper
+  - XKFileManager (0.0.3)
+  - XKHttpNetworkHelper (0.1.0):
+    - AFNetworking
+    - Reachability
+
+DEPENDENCIES:
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - XKFileDownloader
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - Reachability
+    - XKFileDownloader
+    - XKFileManager
+    - XKHttpNetworkHelper
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  XKFileDownloader: 52d8a23584db734dca28ea79ec450f5943abe33e
+  XKFileManager: 3176678f2b9c68bb95113bb9918301831e64f000
+  XKHttpNetworkHelper: ab6e951780dced61dc4fba1b1b87bcd1e307fe45
+
+PODFILE CHECKSUM: 7ffeac6c8f69cb54c7816e10b731f36005fcab80
+
+COCOAPODS: 1.6.0

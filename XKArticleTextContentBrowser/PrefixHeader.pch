@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  XKArticleTextContentBrowser
+//
+//  Created by ALLen、 LAS on 2019/2/14.
+//  Copyright © 2019年 ALLen、 LAS. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+#import "Masonry.h"
+#import "MBProgressHUD.h"
+#import <XKFileDownloader/XKFileDownloader.h>
+
+#define WeakSelf(x)         __weak typeof (self) x = self

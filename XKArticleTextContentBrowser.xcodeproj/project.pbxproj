@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19D99D89221541D000207AF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99D88221541D000207AF6 /* AppDelegate.m */; };
+		19D99D8C221541D000207AF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99D8B221541D000207AF6 /* ViewController.m */; };
+		19D99D8F221541D000207AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D99D8D221541D000207AF6 /* Main.storyboard */; };
+		19D99D91221541D200207AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D99D90221541D200207AF6 /* Assets.xcassets */; };
+		19D99D94221541D200207AF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D99D92221541D200207AF6 /* LaunchScreen.storyboard */; };
+		19D99D97221541D200207AF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99D96221541D200207AF6 /* main.m */; };
+		19D99DA1221541D200207AF6 /* XKArticleTextContentBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DA0221541D200207AF6 /* XKArticleTextContentBrowserTests.m */; };
+		19D99DAC221541D200207AF6 /* XKArticleTextContentBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DAB221541D200207AF6 /* XKArticleTextContentBrowserUITests.m */; };
+		19D99DD62216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DD52216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.m */; };
+		19D99DD92216C29600207AF6 /* XKArticleTextContentQuickLookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DD82216C29600207AF6 /* XKArticleTextContentQuickLookViewController.m */; };
+		19D99DDC2216C54100207AF6 /* XKArticleTextContentWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DDB2216C54100207AF6 /* XKArticleTextContentWebBrowser.m */; };
+		19FF6D3B2217A42F002014B9 /* XKArticleTextContentWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF6D3A2217A42F002014B9 /* XKArticleTextContentWebViewController.m */; };
+		19FF6D3E2217A8AD002014B9 /* XKArticleTextContentPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF6D3D2217A8AD002014B9 /* XKArticleTextContentPageView.m */; };
+		19FF6D412217A90A002014B9 /* XKArticleTextContentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF6D402217A90A002014B9 /* XKArticleTextContentPageViewController.m */; };
+		19FF6D442217A9CA002014B9 /* XKArticleTextContentPageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF6D432217A9CA002014B9 /* XKArticleTextContentPageBrowser.m */; };
+		19FF6D472217B176002014B9 /* XKArticleTextContentPagePdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF6D462217B176002014B9 /* XKArticleTextContentPagePdfViewController.m */; };
+		6121352AD51672EC59E406A4 /* libPods-XKArticleTextContentBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6FB75112CEBBAD980A6235 /* libPods-XKArticleTextContentBrowser.a */; };
+		9F51235D721A2B231F7E5964 /* libPods-XKArticleTextContentBrowserUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC1028D8B6631B9DCEC87EC /* libPods-XKArticleTextContentBrowserUITests.a */; };
+		C73811AC429BBCF32D25AE2A /* libPods-XKArticleTextContentBrowserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C2F1CD83C38B912820B480 /* libPods-XKArticleTextContentBrowserTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19D99D9D221541D200207AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D99D7C221541D000207AF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D99D83221541D000207AF6;
+			remoteInfo = XKArticleTextContentBrowser;
+		};
+		19D99DA8221541D200207AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D99D7C221541D000207AF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D99D83221541D000207AF6;
+			remoteInfo = XKArticleTextContentBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03DCE3DD0C14C075E98CE765 /* Pods-XKArticleTextContentBrowserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKArticleTextContentBrowserUITests.release.xcconfig"; path = "Target Support Files/Pods-XKArticleTextContentBrowserUITests/Pods-XKArticleTextContentBrowserUITests.release.xcconfig"; sourceTree = "<group>"; };
+		19D99D84221541D000207AF6 /* XKArticleTextContentBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKArticleTextContentBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D99D87221541D000207AF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19D99D88221541D000207AF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19D99D8A221541D000207AF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		19D99D8B221541D000207AF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		19D99D8E221541D000207AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19D99D90221541D200207AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19D99D93221541D200207AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19D99D95221541D200207AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D99D96221541D200207AF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19D99D9C221541D200207AF6 /* XKArticleTextContentBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XKArticleTextContentBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D99DA0221541D200207AF6 /* XKArticleTextContentBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentBrowserTests.m; sourceTree = "<group>"; };
+		19D99DA2221541D200207AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D99DA7221541D200207AF6 /* XKArticleTextContentBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XKArticleTextContentBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D99DAB221541D200207AF6 /* XKArticleTextContentBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentBrowserUITests.m; sourceTree = "<group>"; };
+		19D99DAD221541D200207AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D99DBC221542F600207AF6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		19D99DD42216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentQuickLookBrowser.h; sourceTree = "<group>"; };
+		19D99DD52216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentQuickLookBrowser.m; sourceTree = "<group>"; };
+		19D99DD72216C29600207AF6 /* XKArticleTextContentQuickLookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentQuickLookViewController.h; sourceTree = "<group>"; };
+		19D99DD82216C29600207AF6 /* XKArticleTextContentQuickLookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentQuickLookViewController.m; sourceTree = "<group>"; };
+		19D99DDA2216C54100207AF6 /* XKArticleTextContentWebBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentWebBrowser.h; sourceTree = "<group>"; };
+		19D99DDB2216C54100207AF6 /* XKArticleTextContentWebBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentWebBrowser.m; sourceTree = "<group>"; };
+		19D99DDD2216C56D00207AF6 /* XKArticleTextContentBrowserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentBrowserDelegate.h; sourceTree = "<group>"; };
+		19FF6D392217A42F002014B9 /* XKArticleTextContentWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentWebViewController.h; sourceTree = "<group>"; };
+		19FF6D3A2217A42F002014B9 /* XKArticleTextContentWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentWebViewController.m; sourceTree = "<group>"; };
+		19FF6D3C2217A8AD002014B9 /* XKArticleTextContentPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentPageView.h; sourceTree = "<group>"; };
+		19FF6D3D2217A8AD002014B9 /* XKArticleTextContentPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentPageView.m; sourceTree = "<group>"; };
+		19FF6D3F2217A90A002014B9 /* XKArticleTextContentPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentPageViewController.h; sourceTree = "<group>"; };
+		19FF6D402217A90A002014B9 /* XKArticleTextContentPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentPageViewController.m; sourceTree = "<group>"; };
+		19FF6D422217A9CA002014B9 /* XKArticleTextContentPageBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentPageBrowser.h; sourceTree = "<group>"; };
+		19FF6D432217A9CA002014B9 /* XKArticleTextContentPageBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentPageBrowser.m; sourceTree = "<group>"; };
+		19FF6D452217B176002014B9 /* XKArticleTextContentPagePdfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentPagePdfViewController.h; sourceTree = "<group>"; };
+		19FF6D462217B176002014B9 /* XKArticleTextContentPagePdfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentPagePdfViewController.m; sourceTree = "<group>"; };
+		2C0540C0B3E3BF14546A8F5D /* Pods-XKArticleTextContentBrowserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKArticleTextContentBrowserTests.debug.xcconfig"; path = "Target Support Files/Pods-XKArticleTextContentBrowserTests/Pods-XKArticleTextContentBrowserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		74B147ACBEC80B030D3FAEC3 /* Pods-XKArticleTextContentBrowserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKArticleTextContentBrowserUITests.debug.xcconfig"; path = "Target Support Files/Pods-XKArticleTextContentBrowserUITests/Pods-XKArticleTextContentBrowserUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		81D101AB580BED9D8E57AD81 /* Pods-XKArticleTextContentBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKArticleTextContentBrowser.release.xcconfig"; path = "Target Support Files/Pods-XKArticleTextContentBrowser/Pods-XKArticleTextContentBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		94C2F1CD83C38B912820B480 /* libPods-XKArticleTextContentBrowserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XKArticleTextContentBrowserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC03B70E9CFA38735D3DABC4 /* Pods-XKArticleTextContentBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKArticleTextContentBrowserTests.release.xcconfig"; path = "Target Support Files/Pods-XKArticleTextContentBrowserTests/Pods-XKArticleTextContentBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAC1028D8B6631B9DCEC87EC /* libPods-XKArticleTextContentBrowserUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XKArticleTextContentBrowserUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6FB75112CEBBAD980A6235 /* libPods-XKArticleTextContentBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XKArticleTextContentBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F410461EC28A91EB42258CB6 /* Pods-XKArticleTextContentBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKArticleTextContentBrowser.debug.xcconfig"; path = "Target Support Files/Pods-XKArticleTextContentBrowser/Pods-XKArticleTextContentBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19D99D81221541D000207AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6121352AD51672EC59E406A4 /* libPods-XKArticleTextContentBrowser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D99D99221541D200207AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73811AC429BBCF32D25AE2A /* libPods-XKArticleTextContentBrowserTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D99DA4221541D200207AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F51235D721A2B231F7E5964 /* libPods-XKArticleTextContentBrowserUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19D99D7B221541D000207AF6 = {
+			isa = PBXGroup;
+			children = (
+				19D99D86221541D000207AF6 /* XKArticleTextContentBrowser */,
+				19D99D9F221541D200207AF6 /* XKArticleTextContentBrowserTests */,
+				19D99DAA221541D200207AF6 /* XKArticleTextContentBrowserUITests */,
+				19D99D85221541D000207AF6 /* Products */,
+				86B1D3BD0A32BF04FFD4CDD3 /* Pods */,
+				95DD3A70FA3517EB444A518E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19D99D85221541D000207AF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D99D84221541D000207AF6 /* XKArticleTextContentBrowser.app */,
+				19D99D9C221541D200207AF6 /* XKArticleTextContentBrowserTests.xctest */,
+				19D99DA7221541D200207AF6 /* XKArticleTextContentBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D99D86221541D000207AF6 /* XKArticleTextContentBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				19D99DBA221542CD00207AF6 /* WKWebView */,
+				19D99DB9221542CD00207AF6 /* QuickLook */,
+				19D99DBB221542CD00207AF6 /* CGContextRef */,
+				19D99D87221541D000207AF6 /* AppDelegate.h */,
+				19D99D88221541D000207AF6 /* AppDelegate.m */,
+				19D99D8A221541D000207AF6 /* ViewController.h */,
+				19D99D8B221541D000207AF6 /* ViewController.m */,
+				19D99D8D221541D000207AF6 /* Main.storyboard */,
+				19D99D90221541D200207AF6 /* Assets.xcassets */,
+				19D99D92221541D200207AF6 /* LaunchScreen.storyboard */,
+				19D99D95221541D200207AF6 /* Info.plist */,
+				19D99DBC221542F600207AF6 /* PrefixHeader.pch */,
+				19D99D96221541D200207AF6 /* main.m */,
+				19D99DDD2216C56D00207AF6 /* XKArticleTextContentBrowserDelegate.h */,
+			);
+			path = XKArticleTextContentBrowser;
+			sourceTree = "<group>";
+		};
+		19D99D9F221541D200207AF6 /* XKArticleTextContentBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				19D99DA0221541D200207AF6 /* XKArticleTextContentBrowserTests.m */,
+				19D99DA2221541D200207AF6 /* Info.plist */,
+			);
+			path = XKArticleTextContentBrowserTests;
+			sourceTree = "<group>";
+		};
+		19D99DAA221541D200207AF6 /* XKArticleTextContentBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19D99DAB221541D200207AF6 /* XKArticleTextContentBrowserUITests.m */,
+				19D99DAD221541D200207AF6 /* Info.plist */,
+			);
+			path = XKArticleTextContentBrowserUITests;
+			sourceTree = "<group>";
+		};
+		19D99DB9221542CD00207AF6 /* QuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				19D99DD42216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.h */,
+				19D99DD52216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.m */,
+				19D99DD72216C29600207AF6 /* XKArticleTextContentQuickLookViewController.h */,
+				19D99DD82216C29600207AF6 /* XKArticleTextContentQuickLookViewController.m */,
+			);
+			path = QuickLook;
+			sourceTree = "<group>";
+		};
+		19D99DBA221542CD00207AF6 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				19D99DDA2216C54100207AF6 /* XKArticleTextContentWebBrowser.h */,
+				19D99DDB2216C54100207AF6 /* XKArticleTextContentWebBrowser.m */,
+				19FF6D392217A42F002014B9 /* XKArticleTextContentWebViewController.h */,
+				19FF6D3A2217A42F002014B9 /* XKArticleTextContentWebViewController.m */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		19D99DBB221542CD00207AF6 /* CGContextRef */ = {
+			isa = PBXGroup;
+			children = (
+				19FF6D3C2217A8AD002014B9 /* XKArticleTextContentPageView.h */,
+				19FF6D3D2217A8AD002014B9 /* XKArticleTextContentPageView.m */,
+				19FF6D3F2217A90A002014B9 /* XKArticleTextContentPageViewController.h */,
+				19FF6D402217A90A002014B9 /* XKArticleTextContentPageViewController.m */,
+				19FF6D422217A9CA002014B9 /* XKArticleTextContentPageBrowser.h */,
+				19FF6D432217A9CA002014B9 /* XKArticleTextContentPageBrowser.m */,
+				19FF6D452217B176002014B9 /* XKArticleTextContentPagePdfViewController.h */,
+				19FF6D462217B176002014B9 /* XKArticleTextContentPagePdfViewController.m */,
+			);
+			path = CGContextRef;
+			sourceTree = "<group>";
+		};
+		86B1D3BD0A32BF04FFD4CDD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F410461EC28A91EB42258CB6 /* Pods-XKArticleTextContentBrowser.debug.xcconfig */,
+				81D101AB580BED9D8E57AD81 /* Pods-XKArticleTextContentBrowser.release.xcconfig */,
+				2C0540C0B3E3BF14546A8F5D /* Pods-XKArticleTextContentBrowserTests.debug.xcconfig */,
+				BC03B70E9CFA38735D3DABC4 /* Pods-XKArticleTextContentBrowserTests.release.xcconfig */,
+				74B147ACBEC80B030D3FAEC3 /* Pods-XKArticleTextContentBrowserUITests.debug.xcconfig */,
+				03DCE3DD0C14C075E98CE765 /* Pods-XKArticleTextContentBrowserUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		95DD3A70FA3517EB444A518E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FB75112CEBBAD980A6235 /* libPods-XKArticleTextContentBrowser.a */,
+				94C2F1CD83C38B912820B480 /* libPods-XKArticleTextContentBrowserTests.a */,
+				CAC1028D8B6631B9DCEC87EC /* libPods-XKArticleTextContentBrowserUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19D99D83221541D000207AF6 /* XKArticleTextContentBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D99DB0221541D200207AF6 /* Build configuration list for PBXNativeTarget "XKArticleTextContentBrowser" */;
+			buildPhases = (
+				60E2774B4C79A171DA0E33DE /* [CP] Check Pods Manifest.lock */,
+				19D99D80221541D000207AF6 /* Sources */,
+				19D99D81221541D000207AF6 /* Frameworks */,
+				19D99D82221541D000207AF6 /* Resources */,
+				8F90C7172D6AB9153C743FAD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XKArticleTextContentBrowser;
+			productName = XKArticleTextContentBrowser;
+			productReference = 19D99D84221541D000207AF6 /* XKArticleTextContentBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19D99D9B221541D200207AF6 /* XKArticleTextContentBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D99DB3221541D200207AF6 /* Build configuration list for PBXNativeTarget "XKArticleTextContentBrowserTests" */;
+			buildPhases = (
+				3E27B3BE12D9C87A84AAC83E /* [CP] Check Pods Manifest.lock */,
+				19D99D98221541D200207AF6 /* Sources */,
+				19D99D99221541D200207AF6 /* Frameworks */,
+				19D99D9A221541D200207AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D99D9E221541D200207AF6 /* PBXTargetDependency */,
+			);
+			name = XKArticleTextContentBrowserTests;
+			productName = XKArticleTextContentBrowserTests;
+			productReference = 19D99D9C221541D200207AF6 /* XKArticleTextContentBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19D99DA6221541D200207AF6 /* XKArticleTextContentBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D99DB6221541D200207AF6 /* Build configuration list for PBXNativeTarget "XKArticleTextContentBrowserUITests" */;
+			buildPhases = (
+				E2AF0A9F538B14A6C5782570 /* [CP] Check Pods Manifest.lock */,
+				19D99DA3221541D200207AF6 /* Sources */,
+				19D99DA4221541D200207AF6 /* Frameworks */,
+				19D99DA5221541D200207AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D99DA9221541D200207AF6 /* PBXTargetDependency */,
+			);
+			name = XKArticleTextContentBrowserUITests;
+			productName = XKArticleTextContentBrowserUITests;
+			productReference = 19D99DA7221541D200207AF6 /* XKArticleTextContentBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19D99D7C221541D000207AF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "ALLen、 LAS";
+				TargetAttributes = {
+					19D99D83221541D000207AF6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					19D99D9B221541D200207AF6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 19D99D83221541D000207AF6;
+					};
+					19D99DA6221541D200207AF6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 19D99D83221541D000207AF6;
+					};
+				};
+			};
+			buildConfigurationList = 19D99D7F221541D000207AF6 /* Build configuration list for PBXProject "XKArticleTextContentBrowser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19D99D7B221541D000207AF6;
+			productRefGroup = 19D99D85221541D000207AF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19D99D83221541D000207AF6 /* XKArticleTextContentBrowser */,
+				19D99D9B221541D200207AF6 /* XKArticleTextContentBrowserTests */,
+				19D99DA6221541D200207AF6 /* XKArticleTextContentBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19D99D82221541D000207AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D99D94221541D200207AF6 /* LaunchScreen.storyboard in Resources */,
+				19D99D91221541D200207AF6 /* Assets.xcassets in Resources */,
+				19D99D8F221541D000207AF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D99D9A221541D200207AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D99DA5221541D200207AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E27B3BE12D9C87A84AAC83E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XKArticleTextContentBrowserTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60E2774B4C79A171DA0E33DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XKArticleTextContentBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F90C7172D6AB9153C743FAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XKArticleTextContentBrowser/Pods-XKArticleTextContentBrowser-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XKArticleTextContentBrowser/Pods-XKArticleTextContentBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2AF0A9F538B14A6C5782570 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XKArticleTextContentBrowserUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19D99D80221541D000207AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FF6D3E2217A8AD002014B9 /* XKArticleTextContentPageView.m in Sources */,
+				19D99DDC2216C54100207AF6 /* XKArticleTextContentWebBrowser.m in Sources */,
+				19FF6D442217A9CA002014B9 /* XKArticleTextContentPageBrowser.m in Sources */,
+				19FF6D3B2217A42F002014B9 /* XKArticleTextContentWebViewController.m in Sources */,
+				19D99D8C221541D000207AF6 /* ViewController.m in Sources */,
+				19D99D97221541D200207AF6 /* main.m in Sources */,
+				19FF6D412217A90A002014B9 /* XKArticleTextContentPageViewController.m in Sources */,
+				19D99DD62216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.m in Sources */,
+				19D99DD92216C29600207AF6 /* XKArticleTextContentQuickLookViewController.m in Sources */,
+				19D99D89221541D000207AF6 /* AppDelegate.m in Sources */,
+				19FF6D472217B176002014B9 /* XKArticleTextContentPagePdfViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D99D98221541D200207AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D99DA1221541D200207AF6 /* XKArticleTextContentBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D99DA3221541D200207AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D99DAC221541D200207AF6 /* XKArticleTextContentBrowserUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D99D9E221541D200207AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19D99D83221541D000207AF6 /* XKArticleTextContentBrowser */;
+			targetProxy = 19D99D9D221541D200207AF6 /* PBXContainerItemProxy */;
+		};
+		19D99DA9221541D200207AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19D99D83221541D000207AF6 /* XKArticleTextContentBrowser */;
+			targetProxy = 19D99DA8221541D200207AF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19D99D8D221541D000207AF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D99D8E221541D000207AF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19D99D92221541D200207AF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D99D93221541D200207AF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19D99DAE221541D200207AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19D99DAF221541D200207AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19D99DB1221541D200207AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F410461EC28A91EB42258CB6 /* Pods-XKArticleTextContentBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93NAX8BU5X;
+				GCC_PREFIX_HEADER = XKArticleTextContentBrowser/PrefixHeader.pch;
+				INFOPLIST_FILE = XKArticleTextContentBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKArticleTextContentBrowser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+			};
+			name = Debug;
+		};
+		19D99DB2221541D200207AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D101AB580BED9D8E57AD81 /* Pods-XKArticleTextContentBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93NAX8BU5X;
+				GCC_PREFIX_HEADER = XKArticleTextContentBrowser/PrefixHeader.pch;
+				INFOPLIST_FILE = XKArticleTextContentBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKArticleTextContentBrowser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+			};
+			name = Release;
+		};
+		19D99DB4221541D200207AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0540C0B3E3BF14546A8F5D /* Pods-XKArticleTextContentBrowserTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XKArticleTextContentBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKArticleTextContentBrowserTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XKArticleTextContentBrowser.app/XKArticleTextContentBrowser";
+			};
+			name = Debug;
+		};
+		19D99DB5221541D200207AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC03B70E9CFA38735D3DABC4 /* Pods-XKArticleTextContentBrowserTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XKArticleTextContentBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKArticleTextContentBrowserTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XKArticleTextContentBrowser.app/XKArticleTextContentBrowser";
+			};
+			name = Release;
+		};
+		19D99DB7221541D200207AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74B147ACBEC80B030D3FAEC3 /* Pods-XKArticleTextContentBrowserUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XKArticleTextContentBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKArticleTextContentBrowserUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XKArticleTextContentBrowser;
+			};
+			name = Debug;
+		};
+		19D99DB8221541D200207AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DCE3DD0C14C075E98CE765 /* Pods-XKArticleTextContentBrowserUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XKArticleTextContentBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ALLen--LAS.XKArticleTextContentBrowserUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XKArticleTextContentBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19D99D7F221541D000207AF6 /* Build configuration list for PBXProject "XKArticleTextContentBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D99DAE221541D200207AF6 /* Debug */,
+				19D99DAF221541D200207AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D99DB0221541D200207AF6 /* Build configuration list for PBXNativeTarget "XKArticleTextContentBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D99DB1221541D200207AF6 /* Debug */,
+				19D99DB2221541D200207AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D99DB3221541D200207AF6 /* Build configuration list for PBXNativeTarget "XKArticleTextContentBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D99DB4221541D200207AF6 /* Debug */,
+				19D99DB5221541D200207AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D99DB6221541D200207AF6 /* Build configuration list for PBXNativeTarget "XKArticleTextContentBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D99DB7221541D200207AF6 /* Debug */,
+				19D99DB8221541D200207AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19D99D7C221541D000207AF6 /* Project object */;
+}

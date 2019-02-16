@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"CGContextRef绘制PDF文件";
+    self.title = @"CoreGraphics绘制PDF文件";
     
     //基于QuickLook框架实现PDF文件预览
     self.pageBrowser = [[XKArticleTextContentPageBrowser alloc] initWithFrame:self.view.bounds];

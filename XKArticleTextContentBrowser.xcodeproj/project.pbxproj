@@ -17,7 +17,7 @@
 		19D99DAC221541D200207AF6 /* XKArticleTextContentBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DAB221541D200207AF6 /* XKArticleTextContentBrowserUITests.m */; };
 		19D99DD62216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DD52216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.m */; };
 		19D99DD92216C29600207AF6 /* XKArticleTextContentQuickLookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DD82216C29600207AF6 /* XKArticleTextContentQuickLookViewController.m */; };
-		19D99DDC2216C54100207AF6 /* XKArticleTextContentWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DDB2216C54100207AF6 /* XKArticleTextContentWebBrowser.m */; };
+		19D99DDC2216C54100207AF6 /* XKArticleTextContentWebKitBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D99DDB2216C54100207AF6 /* XKArticleTextContentWebKitBrowser.m */; };
 		19FF6D3B2217A42F002014B9 /* XKArticleTextContentWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF6D3A2217A42F002014B9 /* XKArticleTextContentWebViewController.m */; };
 		19FF6D3E2217A8AD002014B9 /* XKArticleTextContentPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF6D3D2217A8AD002014B9 /* XKArticleTextContentPageView.m */; };
 		19FF6D412217A90A002014B9 /* XKArticleTextContentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FF6D402217A90A002014B9 /* XKArticleTextContentPageViewController.m */; };
@@ -68,8 +68,8 @@
 		19D99DD52216B99700207AF6 /* XKArticleTextContentQuickLookBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentQuickLookBrowser.m; sourceTree = "<group>"; };
 		19D99DD72216C29600207AF6 /* XKArticleTextContentQuickLookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentQuickLookViewController.h; sourceTree = "<group>"; };
 		19D99DD82216C29600207AF6 /* XKArticleTextContentQuickLookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentQuickLookViewController.m; sourceTree = "<group>"; };
-		19D99DDA2216C54100207AF6 /* XKArticleTextContentWebBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentWebBrowser.h; sourceTree = "<group>"; };
-		19D99DDB2216C54100207AF6 /* XKArticleTextContentWebBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentWebBrowser.m; sourceTree = "<group>"; };
+		19D99DDA2216C54100207AF6 /* XKArticleTextContentWebKitBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentWebKitBrowser.h; sourceTree = "<group>"; };
+		19D99DDB2216C54100207AF6 /* XKArticleTextContentWebKitBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentWebKitBrowser.m; sourceTree = "<group>"; };
 		19D99DDD2216C56D00207AF6 /* XKArticleTextContentBrowserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentBrowserDelegate.h; sourceTree = "<group>"; };
 		19FF6D392217A42F002014B9 /* XKArticleTextContentWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKArticleTextContentWebViewController.h; sourceTree = "<group>"; };
 		19FF6D3A2217A42F002014B9 /* XKArticleTextContentWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKArticleTextContentWebViewController.m; sourceTree = "<group>"; };
@@ -194,8 +194,8 @@
 		19D99DBA221542CD00207AF6 /* WKWebView */ = {
 			isa = PBXGroup;
 			children = (
-				19D99DDA2216C54100207AF6 /* XKArticleTextContentWebBrowser.h */,
-				19D99DDB2216C54100207AF6 /* XKArticleTextContentWebBrowser.m */,
+				19D99DDA2216C54100207AF6 /* XKArticleTextContentWebKitBrowser.h */,
+				19D99DDB2216C54100207AF6 /* XKArticleTextContentWebKitBrowser.m */,
 				19FF6D392217A42F002014B9 /* XKArticleTextContentWebViewController.h */,
 				19FF6D3A2217A42F002014B9 /* XKArticleTextContentWebViewController.m */,
 			);
@@ -466,7 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19FF6D3E2217A8AD002014B9 /* XKArticleTextContentPageView.m in Sources */,
-				19D99DDC2216C54100207AF6 /* XKArticleTextContentWebBrowser.m in Sources */,
+				19D99DDC2216C54100207AF6 /* XKArticleTextContentWebKitBrowser.m in Sources */,
 				19FF6D442217A9CA002014B9 /* XKArticleTextContentPageBrowser.m in Sources */,
 				19FF6D3B2217A42F002014B9 /* XKArticleTextContentWebViewController.m in Sources */,
 				19D99D8C221541D000207AF6 /* ViewController.m in Sources */,

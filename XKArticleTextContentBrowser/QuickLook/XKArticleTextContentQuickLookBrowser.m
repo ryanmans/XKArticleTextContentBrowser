@@ -9,7 +9,7 @@
 #import "XKArticleTextContentQuickLookBrowser.h"
 #import <QuickLook/QuickLook.h>
 
-@interface XKArticleTextContentQuickLookBrowser ()<QLPreviewControllerDataSource,QLPreviewControllerDelegate>
+@interface XKArticleTextContentQuickLookBrowser ()<QLPreviewControllerDataSource>
 @property (nonatomic,assign)BOOL isLandscape; //横屏
 @property (nonatomic,strong)NSString * fileName;
 @property (nonatomic,weak)UIViewController * superViewController;
@@ -145,11 +145,14 @@
     });
 }
 
-//QLPreviewControllerDelegate
+#pragma mark - QLPreviewControllerDelegate
+
+//文件个数
 - (NSInteger)numberOfPreviewItemsInPreviewController:(QLPreviewController *)controller{
     return 1;
 }
 
+//要加载显示的文件
 - (id<QLPreviewItem>)previewController:(QLPreviewController *)controller previewItemAtIndex:(NSInteger)index{
     return  [XKFileDownloader fileCacheExist:_fileName] ? [NSURL fileURLWithPath:[XKFileDownloader fileCacheDirPath:_fileName]] : nil;
 }
@@ -159,7 +162,6 @@
     if (!_previewController) {
         _previewController = [QLPreviewController new];
         _previewController.view.frame = self.bounds;
-        _previewController.delegate = self;
         _previewController.dataSource = self;
     }
     return _previewController;

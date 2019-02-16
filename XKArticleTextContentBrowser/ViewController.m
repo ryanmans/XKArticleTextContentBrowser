@@ -20,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"PDF文档";
+    
     [self.view addSubview:self.tableView];
     
     WeakSelf(ws);

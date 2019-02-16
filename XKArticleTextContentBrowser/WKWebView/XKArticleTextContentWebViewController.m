@@ -7,10 +7,10 @@
 //
 
 #import "XKArticleTextContentWebViewController.h"
-#import "XKArticleTextContentWebBrowser.h"
+#import "XKArticleTextContentWebKitBrowser.h"
 
-@interface XKArticleTextContentWebViewController ()<XKArticleTextContentWebBrowserDelegate>
-@property(nonatomic,strong)XKArticleTextContentWebBrowser * webBrowser;
+@interface XKArticleTextContentWebViewController ()<XKArticleTextContentWebKitBrowserDelegate>
+@property(nonatomic,strong)XKArticleTextContentWebKitBrowser * webBrowser;
 
 @end
 
@@ -22,14 +22,14 @@
     self.title = @"webkit框架预览PDF";
     
     //基于webkit框架实现PDF文件预览
-    self.webBrowser = [[XKArticleTextContentWebBrowser alloc] initWithFrame:self.view.bounds];
+    self.webBrowser = [[XKArticleTextContentWebKitBrowser alloc] initWithFrame:self.view.bounds];
     self.webBrowser.delegate = self;
     [self.webBrowser showTrainArticleBrowserIn:self];
     
     [self.webBrowser reloadDatas:@"http://public.cdn.sinoxk.com/support/opencourse/KP4Zqwr1RLNT.pdf"];
 }
 
-- (void)articleTextContentBrowser:(XKArticleTextContentWebBrowser *)articleBrowser didDisplayOrientation:(NSUInteger)orientation{
+- (void)articleTextContentBrowser:(XKArticleTextContentWebKitBrowser *)articleBrowser didDisplayOrientation:(NSUInteger)orientation{
     [UIView animateWithDuration:0.3 animations:^{
         self.view.bounds = [UIScreen mainScreen].bounds;
         self.view.transform = CGAffineTransformIdentity;

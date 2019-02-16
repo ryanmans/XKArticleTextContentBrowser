@@ -1,15 +1,15 @@
 //
 //  XKArticleTextContentWebBrowser.m
-//  XKArticleTextContentBrowser
+//  XKarticleTextContentWebKitBrowser
 //
 //  Created by ALLen、 LAS on 2019/2/15.
 //  Copyright © 2019年 ALLen、 LAS. All rights reserved.
 //
 
-#import "XKArticleTextContentWebBrowser.h"
+#import "XKArticleTextContentWebKitBrowser.h"
 #import <WebKit/WebKit.h>
 
-@interface XKArticleTextContentWebBrowser ()<WKNavigationDelegate>
+@interface XKArticleTextContentWebKitBrowser ()<WKNavigationDelegate,UIScrollViewDelegate>
 @property (nonatomic,assign)BOOL isLandscape; //横屏
 @property (nonatomic,strong)NSString * fileName;
 @property (nonatomic,strong)WKWebView * webView;
@@ -17,7 +17,7 @@
 @property (nonatomic,weak)UIViewController * superViewController;
 @end
 
-@implementation XKArticleTextContentWebBrowser
+@implementation XKArticleTextContentWebKitBrowser
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -69,8 +69,8 @@
             if ([UIDevice currentDevice].orientation == UIDeviceOrientationPortrait) [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
             [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
             [_superViewController.navigationController setNavigationBarHidden:NO animated:YES];
-            if (self.delegate && [self.delegate respondsToSelector:@selector(articleTextContentBrowser:didDisplayOrientation:)]) {
-                [self.delegate articleTextContentBrowser:self didDisplayOrientation:1];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(articleTextContentWebKitBrowser:didDisplayOrientation:)]) {
+                [self.delegate articleTextContentWebKitBrowser:self didDisplayOrientation:1];
             }
             [self.webView reload];
         };
@@ -85,8 +85,8 @@
             if ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft) [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
             [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
             [_superViewController.navigationController setNavigationBarHidden:YES animated:YES];
-            if (self.delegate && [self.delegate respondsToSelector:@selector(articleTextContentBrowser:didDisplayOrientation:)]) {
-                [self.delegate articleTextContentBrowser:self didDisplayOrientation:2];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(articleTextContentWebKitBrowser:didDisplayOrientation:)]) {
+                [self.delegate articleTextContentWebKitBrowser:self didDisplayOrientation:2];
             }
             [self.webView reload];
         };
@@ -97,8 +97,8 @@
 - (void)reloadDatas:(NSString*)fileUrl{
     dispatch_async(dispatch_get_main_queue(), ^{
         if (!fileUrl.length) {
-            if (self.delegate && [self.delegate respondsToSelector:@selector(articleTextContentBrowser:didFinishLoadData:)]) {
-                [self.delegate articleTextContentBrowser:self didFinishLoadData:YES];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(articleTextContentWebKitBrowser:didFinishLoadDataWithError:)]) {
+                [self.delegate articleTextContentWebKitBrowser:self didFinishLoadDataWithError:YES];
             }
         }
         else{
@@ -122,9 +122,7 @@
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [ws.progressHUD hideAnimated:YES];
                         [self reloadfiles];
-                        if (ws.delegate && [ws.delegate respondsToSelector:@selector(articleTextContentBrowser:didFinishLoadData:)]) {
-                            [ws.delegate articleTextContentBrowser:self didFinishLoadData:NO];
-                        }
+                    
                     });
                     
                 } failure:^(NSError * _Nullable error) {
@@ -132,8 +130,8 @@
                     dispatch_async(dispatch_get_main_queue(), ^{
                         NSLog(@"文件下载失败,请稍后重试");
                         [ws.progressHUD hideAnimated:YES];
-                        if (ws.delegate && [ws.delegate respondsToSelector:@selector(articleTextContentBrowser:didFinishLoadData:)]) {
-                            [ws.delegate articleTextContentBrowser:self didFinishLoadData:YES];
+                        if (ws.delegate && [ws.delegate respondsToSelector:@selector(articleTextContentWebKitBrowser:didFinishLoadDataWithError:)]) {
+                            [ws.delegate articleTextContentWebKitBrowser:self didFinishLoadDataWithError:YES];
                         }
                     });
                     
@@ -152,6 +150,30 @@
     else{
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[XKFileDownloader fileCacheDirPath:self.fileName]]]];
     }
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(articleTextContentWebKitBrowser:didFinishLoadDataWithError:)]) {
+        [self.delegate articleTextContentWebKitBrowser:self didFinishLoadDataWithError:NO];
+    }
+}
+
+//滚动视图
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat height = scrollView.frame.size.height;
+    CGFloat contentYoffset = scrollView.contentOffset.y;
+    CGFloat distanceFromBottom = scrollView.contentSize.height - contentYoffset;
+    if (distanceFromBottom < height) {
+        NSLog(@"到底部了");
+        if (self.delegate && [self.delegate respondsToSelector:@selector(articleContentWebKitBrowserDidScrollToBottom:)]) {
+            [self.delegate articleContentWebKitBrowserDidScrollToBottom:self];
+        }
+    }
+}
+
+// 页面加载失败时调用
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(articleTextContentWebKitBrowser:didFinishLoadDataWithError:)]) {
+        [self.delegate articleTextContentWebKitBrowser:self didFinishLoadDataWithError:YES];
+    }
 }
 
 #pragma mark - 懒加载
@@ -159,6 +181,7 @@
     if (!_webView) {
         _webView = [WKWebView new];
         _webView.navigationDelegate = self;
+        _webView.scrollView.delegate = self;
         _webView.scrollView.backgroundColor = [UIColor whiteColor];
     }
     return _webView;

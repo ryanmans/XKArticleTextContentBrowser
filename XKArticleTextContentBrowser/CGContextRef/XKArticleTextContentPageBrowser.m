@@ -167,7 +167,7 @@
 //展现内容
 - (void)showTrainArticleData{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        //文件解析
+        //文件解析(获取文档页数)
         CFURLRef pdfURL = (__bridge_retained CFURLRef)[NSURL fileURLWithPath:[XKFileDownloader fileCacheDirPath:self.fileName]];
         CGPDFDocumentRef pdfDocument = CGPDFDocumentCreateWithURL((CFURLRef)pdfURL);
         CFRelease(pdfURL);
@@ -241,7 +241,7 @@
 }
 
 #pragma mark -懒加载
-- (UIPageViewController *)previewController{
+- (UIPageViewController *)previewController{ // 翻页效果:UIPageViewControllerTransitionStylePageCurl  滚动效果 : UIPageViewControllerTransitionStyleScroll
     if (!_previewController) {
         _previewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
                                                              navigationOrientation:UIPageViewControllerNavigationOrientationVertical

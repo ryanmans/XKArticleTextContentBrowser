@@ -10,7 +10,8 @@
 #### 一、WKWebView加载
 
 ```
- iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,内存占用率都优于UIWebView,故此本文, 着重介绍WKWebView(UIWebView用法接近)
+iOS8.0之后,苹果已推出框架WebKit, WKWebView作为其中的浏览器控件,其加载速度,
+内存占用率都优于UIWebView,故此本文, 着重介绍WKWebView(UIWebView用法接近)
 
 ```
 
@@ -22,7 +23,8 @@
 #### 二、QLPreviewController加载
 
 ```
-QLPreviewController是系统自带的文件预览控制器,要使用QLPreviewController先得在文件中导入头文件#import <QuickLook/QuickLook.h>，并且实现其代理方法QLPreviewControllerDataSource
+QLPreviewController是系统自带的文件预览控制器,要使用QLPreviewController
+先得在文件中导入头文件#import <QuickLook/QuickLook.h>，并且实现其代理方法QLPreviewControllerDataSource
 
 ```
 

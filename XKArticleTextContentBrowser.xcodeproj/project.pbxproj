@@ -648,7 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93NAX8BU5X;
+				DEVELOPMENT_TEAM = 6KEF9C34W3;
 				GCC_PREFIX_HEADER = XKArticleTextContentBrowser/PrefixHeader.pch;
 				INFOPLIST_FILE = XKArticleTextContentBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -669,7 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93NAX8BU5X;
+				DEVELOPMENT_TEAM = 6KEF9C34W3;
 				GCC_PREFIX_HEADER = XKArticleTextContentBrowser/PrefixHeader.pch;
 				INFOPLIST_FILE = XKArticleTextContentBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
